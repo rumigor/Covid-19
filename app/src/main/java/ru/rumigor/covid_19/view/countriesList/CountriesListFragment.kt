@@ -1,4 +1,6 @@
 package ru.rumigor.covid_19.view.countriesList
 
-class CountriesListFragment {
+import moxy.MvpAppCompatFragment
+
+class CountriesListFragment:MvpAppCompatFragment(view_countriestlist), CountriesListView, Countries {
 }

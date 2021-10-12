@@ -8,11 +8,14 @@ import dagger.Component
 import dagger.android.AndroidInjectionModule
 import dagger.android.AndroidInjector
 import ru.rumigor.covid_19.CovidApp
+import ru.rumigor.covid_19.di.modules.CovidApiModule
 import ru.rumigor.covid_19.scheduler.Schedulers
 
 
-@Component(modules = [AndroidInjectionModule::class])
+@Component(modules = [AndroidInjectionModule::class, CovidApiModule::class])
 interface CovidApplicationComponent : AndroidInjector<CovidApp> {
+
+    fun countriesListComponent(): CountriesListComponent.Builder
 
     @Component.Builder
     interface Builder{

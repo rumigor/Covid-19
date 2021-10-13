@@ -7,7 +7,7 @@ import ru.rumigor.covid_19.data.model.Country
 
 interface Covid19Api {
 
-    @GET()
+    @GET("/countries")
     fun getCountriesList(): Single<List<Country>>
 //    @GET("/code?code={code}")
 //    fun getCountryByCode(@Path("code") code: String): Single<Country>

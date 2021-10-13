@@ -16,7 +16,7 @@ import javax.inject.Named
 class CovidApiModule {
     @Named("covid_api")
     @Provides
-    fun provideBaseUrlProd(): String = "https://covid-19-data.p.rapidapi.com/country/all/"
+    fun provideBaseUrlProd(): String = "https://covid-193.p.rapidapi.com/"
 
     @Reusable
     @Provides

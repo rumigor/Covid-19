@@ -15,7 +15,7 @@ interface CovidStatsDao {
     @Query("SELECT * FROM country")
     fun fetchCountriesList(): Observable<List<Country>>
 
-    @Query("SELECT * FROM country WHERE country LIKE :country LIMIT 1")
+    @Query("SELECT * FROM country WHERE response LIKE :country LIMIT 1")
     fun fetchCountryByCode(country: String): Single<Country>
 
     @Insert(onConflict = REPLACE)

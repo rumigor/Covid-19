@@ -10,8 +10,8 @@ object Covid19ApiInterceptor: Interceptor {
             chain.request()
                 .newBuilder()
                 .get()
-                .header("x-rapidapi-host", "covid-19-data.p.rapidapi.com")
-                .header("x-rapidapi-key", "273ef6bf0emshf2a75ae2d2a51ffp183d12jsn4d45aedf13b7")
+                .header("x-rapidapi-host", "covid-193.p.rapidapi.com")
+                .header("x-rapidapi-key", "2d55321602msh33c8d91c041d686p1bd305jsn6b6ee598e59a")
                 .build()
         )
 }

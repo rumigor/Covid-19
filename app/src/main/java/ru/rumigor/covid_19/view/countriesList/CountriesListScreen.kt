@@ -7,5 +7,5 @@ import com.github.terrakok.cicerone.androidx.FragmentScreen
 object CountriesListScreen : FragmentScreen {
 
     override fun createFragment(factory: FragmentFactory): Fragment =
-        CountriesListFragmentFragment.newInstance()
+        CountriesListFragment.newInstance()
 }
